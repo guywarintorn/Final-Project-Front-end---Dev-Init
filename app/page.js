@@ -69,7 +69,7 @@ export default function Home() {
         <h1 className="text-md sm:text:xl md:text-2xl lg:text-3xl text-black dark:text-white font-bold mb-6 mt-8">
           Personal Information Management App
         </h1>
-        <a href='/calendar' className="my-4 border text-bold dark:text-white">Full Calendar Page</a>
+        <a href='/calendar' className="my-4 border text-bold text-white p-2 dark:border-white bg-slate-700 hover:bg-slate-900 hover:text-white">Full Calendar Page</a>
         <div className="grid grid-cols-1 border-t-2 border-b-2 lg:border-2 lg:rounded-lg text-center p-10 mx-auto w-full lg:w-3/5">
           <TodoForm
             title={title}

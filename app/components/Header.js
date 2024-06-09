@@ -2,8 +2,6 @@ export default function Header(props) {
   const {theme, setTheme} = props;
 
   function ToggleTheme() {
-    const htmlElement = document.documentElement;
-
     if (theme === 'light') {
       setTheme('dark');
     } else {
@@ -20,7 +18,7 @@ export default function Header(props) {
       </div>
       <div className="flex-none">
         <span className="mr-2 text-dark dark:text-white">{theme === 'light' ? 'dark' : 'light'}</span>
-        <button className="border dark:text-white" onClick={ToggleTheme}>
+        <button className="border text-white p-2 dark:border-white bg-slate-700 hover:bg-slate-900" onClick={ToggleTheme}>
           Change
         </button>
       </div>
